@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alianza Apícola</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+}
+
+.logo img{
+height:50px;
+margin-right:10px;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:600px;
+background-image:url("Apiario.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-contenido{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:10px;
+animation: aparecer 2s;
+}
+
+.titulo{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.subtitulo{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.boton{
+background:#f2b705;
+padding:15px 30px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+border-radius:8px;
+transition:0.3s;
+}
+
+.boton:hover{
+transform:scale(1.1);
+background:#ffd84d;
+}
+
+/* SECCIONES */
+
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* SERVICIOS */
+
+.services{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:30px;
+width:260px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* GALERIA */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery img{
+width:300px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* CONTADOR */
+
+.contador{
+background:#f2b705;
+}
+
+.contadores{
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.numero{
+font-size:50px;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ANIMACION */
+
+@keyframes aparecer{
+
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png">
+
+Alianza Apícola
+
+</div>
+
+<nav>
+
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-contenido">
+
+<h1 class="titulo">Alianza Apícola</h1>
+
+<p class="subtitulo">Más de 20 años fortaleciendo la producción apícola</p>
+
+<a class="boton" href="#servicios">Conocer Servicios</a>
+
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+
+<section class="section" id="servicios">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="services">
+
+<div class="card">
+
+<h3>Producción Apícola</h3>
+
+<p>Implementación y manejo de apiarios productivos.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Asesoría Técnica</h3>
+
+<p>Acompañamiento profesional a apicultores.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Cursos de Apicultura</h3>
+
+<p>Capacitaciones para productores.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section class="section" id="galeria">
+
+<h2>Galería de Apiarios</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1506947411487-a56738267384">
+
+<img src="https://images.unsplash.com/photo-1560493676-04071c5f467b">
+
+<img src="https://images.unsplash.com/photo-1598514982201-1e4d2c2c932a">
+
+</div>
+
+</section>
+
+<!-- NOSOTROS -->
+
+<section class="section" id="nosotros">
+
+<h2>¿Por qué elegirnos?</h2>
+
+<p>
+
+En Alianza Apícola contamos con más de 20 años de experiencia fortaleciendo la producción apícola y apoyando a productores con asesoría profesional.
+
+</p>
+
+</section>
+
+<!-- CONTADOR -->
+
+<section class="section contador">
+
+<h2>Nuestra Experiencia</h2>
+
+<div class="contadores">
+
+<div>
+
+<h3 class="numero" data-numero="20">0</h3>
+
+<p>Años de experiencia</p>
+
+</div>
+
+<div>
+
+<h3 class="numero" data-numero="500">0</h3>
+
+<p>Colmenas manejadas</p>
+
+</div>
+
+<div>
+
+<h3 class="numero" data-numero="120">0</h3>
+
+<p>Productores capacitados</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="section" id="contacto">
+
+<h2>Contacto</h2>
+
+<p>WhatsApp: +57 3000000000</p>
+
+<p>Email: alianzaapicola@email.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Alianza Apícola | Producción y Asesoría Apícola</p>
+
+</footer>
+
+<!-- BOTON WHATSAPP -->
+
+<a class="whatsapp" href="https://wa.me/573000000000" target="_blank">
+
+WhatsApp
+
+</a>
+
+<script>
+
+const counters = document.querySelectorAll('.numero');
+
+counters.forEach(counter => {
+
+let target = +counter.getAttribute('data-numero');
+let count = 0;
+
+let update = () => {
+
+count++;
+
+counter.innerText = count;
+
+if(count < target){
+
+requestAnimationFrame(update);
+
+}
+
+};
+
+update();
+
+});
+
+</script>
+
+</body>
+
+</html>
