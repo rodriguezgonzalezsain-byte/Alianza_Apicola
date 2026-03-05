@@ -3,86 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Improved web page for Alianza Apicola with optimized layout and accessibility improvements">
-    <title>Alianza Apicola</title>
+    <meta name="description" content="Alianza Apícola - Enhancing Beekeeping Practices"> 
+    <meta name="keywords" content="beekeeping, apiculture, honey, bees"> 
+    <meta name="author" content="Alianza Apícola">
+    <title>Alianza Apícola</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #f8f8f8; padding: 20px; text-align: center; }
+        .container { padding: 20px; }
+        form { display: flex; flex-direction: column; }
+        input, textarea { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .button { background: #5cba47; color: white; border: none; padding: 10px; cursor: pointer; }
+        .button:hover { background: #4b9b3a; }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Alianza Apícola</h1>
     </header>
-
-    <main>
-        <section id="gallery">
-            <h2>Image Gallery</h2>
-            <img src="image1.jpg" alt="Description of image 1" class="gallery-img">
-            <img src="image2.jpg" alt="Description of image 2" class="gallery-img">
-            <img src="image3.jpg" alt="Description of image 3" class="gallery-img">
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-
-        <section id="counter">
-            <h2>Our Achievements</h2>
-            <div class="counter">0</div>
-            <button onclick="startCounter()">Start Counter</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Alianza Apicola. All rights reserved.</p>
-    </footer>
-
+    <div class="container">
+        <p>Your one-stop resource for all things beekeeping.</p>
+        <form action="submit.php" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
     <script>
-        function startCounter() {
-            let count = 0;
-            const counterElement = document.querySelector('.counter');
-            const interval = setInterval(() => {
-                count++;
-                counterElement.textContent = count;
-                if (count === 100) clearInterval(interval);
-            }, 100);
+        function validateForm() {
+            // Simple form validation logic can go here.
+            return true;
         }
     </script>
-    <style>
-        nav a {
-            padding: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        nav a:hover {
-            background-color: #ddd;
-        }
-        .gallery-img {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
-        }
-        @media (max-width: 600px) {
-            .gallery-img {
-                max-width: 100%;
-            }
-        }
-    </style>
 </body>
 </html>
