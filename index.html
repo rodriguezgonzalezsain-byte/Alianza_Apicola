@@ -15,20 +15,6 @@ font-family: Arial;
 margin:0;
 background:#f5f5f5;
 }
-.instagram{
-position:fixed;
-bottom:90px;   /* esto lo pone arriba del whatsapp */
-right:20px;
-background:#E4405F;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-z-index:999;
-}
-
 /* HEADER */
 
 header{
@@ -183,21 +169,52 @@ padding:20px;
 text-align:center;
 }
 
-/* WHATSAPP */
+/* BOTONES REDES */
 
-.whatsapp{
+.instagram-btn{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#E4405F;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:1000;
+transition:0.3s;
+}
+
+.instagram-btn img{
+width:28px;
+}
+
+.whatsapp-btn{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
 box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:1000;
+transition:0.3s;
 }
 
+.whatsapp-btn img{
+width:30px;
+}
+
+.instagram-btn:hover,
+.whatsapp-btn:hover{
+transform:scale(1.1);
+}
 /* ANIMACION */
 
 @keyframes aparecer{
@@ -380,16 +397,15 @@ En Alianza Apícola contamos con más de 20 años de experiencia fortaleciendo l
 <p>© 2026 Alianza Apícola | Producción y Asesoría Apícola</p>
 
 </footer>
+<!-- BOTONES REDES SOCIALES -->
 
-<!-- BOTON WHATSAPP -->
-<a class="instagram" href="https://instagram.com" target="_blank">
-
-  Instagram
+<a href="https://instagram.com/@i.am_sa1n" class="instagram-btn" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
 </a>
 
-<a class="whatsapp" href="https://wa.me/573212909413" target="_blank">
-
-WhatsApp
+<a href="https://wa.me/573212909413" class="whatsapp-btn" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
 
 </a>
 
@@ -421,19 +437,8 @@ update();
 });
 
 </script>
-window.addEventListener("scroll", function(){
-let elementos = document.querySelectorAll(".section");
 
-elementos.forEach(function(el){
-let posicion = el.getBoundingClientRect().top;
-let pantalla = window.innerHeight;
 
-if(posicion < pantalla - 100){
-el.style.opacity = "1";
-el.style.transform = "translateY(0)";
-}
-});
-});
 </script>
 </a>
 </body>
