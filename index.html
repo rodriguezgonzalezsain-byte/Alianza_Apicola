@@ -404,6 +404,21 @@ update();
 });
 
 </script>
+  <script>
+window.addEventListener("scroll", function(){
+let elementos = document.querySelectorAll(".section");
+
+elementos.forEach(function(el){
+let posicion = el.getBoundingClientRect().top;
+let pantalla = window.innerHeight;
+
+if(posicion < pantalla - 100){
+el.style.opacity = "1";
+el.style.transform = "translateY(0)";
+}
+});
+});
+</script>
 
 </body>
 
