@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producción Apícola | Alianza Apícola</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f7f7f7;
+color:#333;
+}
+
+/* MENU */
+
+header{
+background:#1f3c2c;
+color:white;
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+nav h2{
+margin:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffd000;
+}
+
+/* HERO */
+
+.hero{
+height:60vh;
+background-image:url("https://images.unsplash.com/photo-1561504935-9dbe2f0b0f96");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+}
+
+/* SECCIONES */
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#1f3c2c;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* GALERIA */
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.galeria img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+/* BOTON WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp:hover{
+background:#1ebe5d;
+}
+
+/* FOOTER */
+
+footer{
+background:#1f3c2c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<h2>🐝 Alianza Apícola</h2>
+
+<div>
+<a href="index.html">Inicio</a>
+<a href="#">Producción</a>
+<a href="#">Productos</a>
+<a href="#">Galería</a>
+<a href="#">Contacto</a>
+</div>
+
+</nav>
+</header>
+
+
+<section class="hero">
+<h1>Producción Apícola Profesional</h1>
+</section>
+
+
+<section class="section">
+
+<h2>¿Qué es la Producción Apícola?</h2>
+
+<p style="text-align:center; max-width:800px; margin:auto;">
+La producción apícola consiste en el manejo técnico de colmenas para la obtención de productos de la colmena como miel, polen, propóleo, cera y jalea real. Además, la apicultura cumple un papel fundamental en la polinización de cultivos y la conservación de los ecosistemas.
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🐝 Manejo de Apiarios</h3>
+<p>Manejo técnico de colmenas, revisión sanitaria, control de plagas y fortalecimiento de colonias.</p>
+</div>
+
+<div class="card">
+<h3>🍯 Producción de Miel</h3>
+<p>Extracción y procesamiento de miel bajo buenas prácticas apícolas garantizando calidad y pureza.</p>
+</div>
+
+<div class="card">
+<h3>🌼 Polinización</h3>
+<p>Servicios de polinización para cultivos agrícolas mejorando productividad y rendimiento.</p>
+</div>
+
+<div class="card">
+<h3>📚 Capacitación Apícola</h3>
+<p>Formación en manejo de colmenas, instalación de apiarios y producción apícola sostenible.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Galería del Apiario</h2>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924">
+<img src="https://images.unsplash.com/photo-1558640479-8241c1a41d9b">
+<img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf">
+
+</div>
+
+</section>
+
+
+<a class="whatsapp" href="https://wa.me/573000000000" target="_blank">
+WhatsApp
+</a>
+
+
+<footer>
+
+<p>© 2026 Alianza Apícola | Producción y Servicios Apícolas</p>
+
+</footer>
+
+
+</body>
+</html>
